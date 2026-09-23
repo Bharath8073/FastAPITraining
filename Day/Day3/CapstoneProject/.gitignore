@@ -1,0 +1,53 @@
+# ==========================================
+# FastAPI / Python Specific
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.log
+logs/
+
+# ==========================================
+# Environments & Credentials (CRITICAL)
+# ==========================================
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+ENV/
+env/
+
+# ==========================================
+# Databases (Local development)
+# ==========================================
+*.sqlite3
+*.db
+
+# ==========================================
+# Testing & Code Quality
+# ==========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+.DS_Store
+Thumbs.db

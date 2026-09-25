@@ -5,7 +5,7 @@ from uuid import uuid4
 from fastapi import APIRouter, Depends, HTTPException, status
 from pymongo.collection import Collection
 
-from app.dependencie import get_users_collection
+from app.dependencies import get_users_collection
 from app.schemas.user import UserCreate, UserUpdate, UserResponse
 
 router = APIRouter(prefix="/users", tags=["Users"])

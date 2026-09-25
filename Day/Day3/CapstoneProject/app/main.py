@@ -7,11 +7,15 @@ from app.routers import users
 from app.routers import categories
 from app.routers import tickets
 from app.routers import comments
+from app.routers import attachments
+from app.routers import audit_logs
 
 # Creating FastAPI app instance
 app = FastAPI(title=settings.APP_NAME)
 
 app.include_router(users.router)
+app.include_router(audit_logs.router)
+app.include_router(attachments.router)
 app.include_router(comments.router)
 app.include_router(categories.router)
 app.include_router(tickets.router)

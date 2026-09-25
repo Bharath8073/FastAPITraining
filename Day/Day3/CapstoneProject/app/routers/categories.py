@@ -18,7 +18,7 @@ from uuid import uuid4
 from fastapi import APIRouter, Depends, HTTPException, status
 from pymongo.collection import Collection
 
-from app.dependencie import get_categories_collection
+from app.dependencies import get_categories_collection
 from app.schemas.category import CategoryCreate, CategoryUpdate, CategoryResponse
 
 router = APIRouter(prefix="/categories", tags=["Categories"])
